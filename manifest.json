@@ -30,8 +30,8 @@
     "commands": {
         "open-company": {
             "suggested_key": {
-                "default": "Alt+O",
-                "mac": "Alt+O"
+                "default": "Alt+Shift+O",
+                "mac": "Alt+Shift+O"
             },
             "description": "Open Company"
         }
