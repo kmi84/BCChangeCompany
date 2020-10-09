@@ -1,0 +1,49 @@
+{
+    "name": "BC Change Company",
+    "version": "0.1",
+    "description": "Easily switch between companies in your D365 Business Central.",
+    "permissions": [
+        "activeTab"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "page_action": {
+        "default_icon": {
+            "16": "images/favicon-16x16.png",
+            "32": "images/favicon-32x32.png",
+            "48": "images/favicon-48x48.png",
+            "128": "images/favicon-128x128.png"
+        }
+    },
+    "icons": {
+        "16": "images/favicon-16x16.png",
+        "32": "images/favicon-32x32.png",
+        "48": "images/favicon-48x48.png",
+        "128": "images/favicon-128x128.png"
+    },
+    "commands": {
+        "open-company": {
+            "suggested_key": {
+                "default": "Alt+O",
+                "mac": "Alt+O"
+            },
+            "description": "Open Company"
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/BC/*",
+                "https://*/BC/*"
+            ],
+            "js": [
+                "contentScript.js"
+            ]
+        }
+    ],
+    "manifest_version": 2
+}
