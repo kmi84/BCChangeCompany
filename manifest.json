@@ -1,11 +1,9 @@
 {
     "name": "BC Change Company",
-    "version": "0.1",
+    "version": "0.2",
     "description": "Easily switch between companies in your D365 Business Central.",
     "permissions": [
-        "activeTab",
-        "http://*/BC/*",
-        "https://*/BC/*"
+        "activeTab"
     ],
     "background": {
         "scripts": [
@@ -36,16 +34,5 @@
             "description": "Open Company"
         }
     },
-    "content_scripts": [
-        {
-            "matches": [
-                "http://*/BC/*",
-                "https://*/BC/*"
-            ],
-            "js": [
-                "contentScript.js"
-            ]
-        }
-    ],
     "manifest_version": 2
 }
